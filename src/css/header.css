@@ -1,0 +1,28 @@
+header{
+    grid-area: header;
+    background-color: var(--bgHeader);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--marginHorizontal);
+}
+
+header button{
+    border:0 !important;
+    color: var(--fontColorContent) !important;
+}
+
+header .mobileVersion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+header .myCart{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

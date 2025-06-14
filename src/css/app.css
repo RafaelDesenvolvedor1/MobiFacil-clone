@@ -1,0 +1,39 @@
+:root {
+  --bgBody: #f6f6f6;
+  --bgHeader: #55368b;
+
+  --colorPrimary: #f8a629;
+
+  --fontColorContent: #fff;
+
+  --marginHorizontal: 3rem;
+  --marginVertical: 2rem;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:.4fr repeat(4, 1fr);
+  gap: 8px;
+
+  grid-template-areas:"header header header header header" 
+                        "main main main main main"
+                        "main main main main main"
+                        "main main main main main"
+                        "footer footer footer footer footer";
+}
+
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}

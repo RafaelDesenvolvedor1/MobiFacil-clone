@@ -1,28 +1,109 @@
-header{
-    grid-area: header;
-    background-color: var(--bgHeader);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--marginHorizontal);
+header {
+  grid-area: header;
+  background-color: var(--bgHeader);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--marginHorizontal);
+  min-width: 100%;
 }
 
-header button{
-    border:0 !important;
-    color: var(--fontColorContent) !important;
+header button {
+  border: 0 !important;
+  color: var(--fontColorContent) !important;
+  box-shadow: none !important;
+  font-size: 1.6rem !important;
 }
 
-header .mobileVersion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+header .mobileVersion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
+header .mobileVersionNav {
+  background-color: var(--colorPrimary);
+  padding: 1rem;
+}
 
-header .myCart{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+header .mobileVersionNav .myBtnClose {
+  width: 1px;
+  padding: 0;
+  margin-bottom: var(--marginVertical);
+}
+
+header .mobileVersionNav .cardUser {
+  background: linear-gradient(
+      180deg,
+      rgba(76, 55, 112, 0),
+      rgba(254, 161, 63, 0.58)
+    ),
+    #4c3770;
+  color: var(--fontColorContent);
+}
+
+header .mobileVersionNav .cardUser .user {
+  background-color: var(--bgHeader);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  font-size: 2.5rem;
+  border: 1px solid var(--colorPrimary);
+}
+
+header .mobileVersionNav .card-title {
+  font-size: 1rem;
+}
+
+header .mobileVersionNav .cardUser button {
+  font-size: 0.8rem !important;
+  font-weight: bold;
+  padding: 0;
+}
+
+header .mobileVersionNav .cardLink {
+  border: 0;
+  /* border-radius: 0; */
+}
+
+header .mobileVersionNav .linkNav {
+  width: 100%;
+  padding: 1.5rem;
+  text-decoration: 0;
+  color: #303030;
+}
+
+header .mobileVersionNav .linkNav::before {
+  font-family:'Font Awesome 6 Free';
+  display: inline-block;
+  content:"\f14e";
+  font-weight: 900;
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #5f27cd;
+  margin-right: var(--marginHorizontal);
+}
+
+header .myCart .myBage {
+  background-color: var(--colorPrimary);
+  padding: 2px;
+  font-weight: 500;
+  font-size: .8rem;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header .myCart {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }

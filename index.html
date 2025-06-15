@@ -50,21 +50,45 @@
           </button>
 
           <div
-            class="offcanvas offcanvas-start"
+            class="offcanvas offcanvas-start mobileVersionNav"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <!-- <div class="offcanvas-header"> -->
               <button
                 type="button"
-                class="btn-close"
+                class="btn myBtnClose"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            <!-- </div> -->
+            <div class="card cardUser mb-3">
+              <div class="d-flex align-items-center">
+                <div class="col-md-4">
+                  <div class="user ms-3">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Bem - Vindo!</h5>
+                    <p class="card-text">
+                      <button type="button" class="btn btn-link">Entre</button>
+                      Ou
+                      <button type="button" class="btn btn-link">Cadastre-se</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            menu
+            <div class="card cardLink">
+              <a href="#" class="linkNav">Minhas Viagens</a>
+               <a href="#" class="linkNav">Atendimento</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -81,6 +105,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-circle myBage"
+            >0</span
+          >
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
 

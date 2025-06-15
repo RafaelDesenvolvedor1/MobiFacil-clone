@@ -126,11 +126,16 @@ header .myCart .offcanvas button {
 }
 
 header .myCart .myCartBody{
-  min-height: 100%;
+  min-height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 header .myCart .myCartBody .emptyCart{
-  margin: 0 var(--marginHorizontal);
+  /* margin: 0 var(--marginHorizontal); */
+  grid-row: 2 / 2;
+  grid-column: 1/ 4;
 }
 
 header .myCart .myCartBody .emptyCart img{
@@ -146,9 +151,11 @@ header .myCart .myCartBody button{
   background-color: var(--colorPrimary) !important;
   color: var(--fontColorContent) !important;
   padding: 2rem;
+  grid-column: 1 / 4;
+  grid-row: 5 ;
 }
 
 header .myCart .myCartBody button:hover{
   background-color: var(--bgHeader) !important;
-  align-self: flex-end;
+
 }

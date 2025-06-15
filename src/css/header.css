@@ -80,9 +80,9 @@ header .mobileVersionNav .linkNav {
 }
 
 header .mobileVersionNav .linkNav::before {
-  font-family:'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   display: inline-block;
-  content:"\f14e";
+  content: "\f14e";
   font-weight: 900;
   font-size: 1.3rem;
   display: inline-block;
@@ -94,7 +94,7 @@ header .myCart .myBage {
   background-color: var(--colorPrimary);
   padding: 2px;
   font-weight: 500;
-  font-size: .8rem;
+  font-size: 0.8rem;
   width: 20px;
   height: 20px;
   justify-content: center;
@@ -106,4 +106,49 @@ header .myCart {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+header .myCart .cartTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+header .myCart .cartTitle::before {
+  font-family: "Font Awesome 6 Free";
+  display: inline-block;
+  content: "\f07a";
+  margin-right: var(--marginHorizontal);
+}
+
+header .myCart .offcanvas button {
+  color: #303030 !important;
+}
+
+header .myCart .myCartBody{
+  min-height: 100%;
+}
+
+header .myCart .myCartBody .emptyCart{
+  margin: 0 var(--marginHorizontal);
+}
+
+header .myCart .myCartBody .emptyCart img{
+  width: 40%;
+}
+
+header .myCart .myCartBody .emptyCart p {
+  font-weight: 500;
+}
+
+header .myCart .myCartBody button{
+  font-size: 1rem !important;
+  background-color: var(--colorPrimary) !important;
+  color: var(--fontColorContent) !important;
+  padding: 2rem;
+}
+
+header .myCart .myCartBody button:hover{
+  background-color: var(--bgHeader) !important;
+  align-self: flex-end;
 }

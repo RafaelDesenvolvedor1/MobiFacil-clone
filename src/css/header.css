@@ -134,7 +134,7 @@ header .myCart .myCartBody{
 
 header .myCart .myCartBody .emptyCart{
   /* margin: 0 var(--marginHorizontal); */
-  grid-row: 2 / 2;
+  grid-row: 2 / 4;
   grid-column: 1/ 4;
 }
 

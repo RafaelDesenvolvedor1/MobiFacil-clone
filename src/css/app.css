@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows:.4fr repeat(4, 1fr);
-  gap: 8px;
+  /* gap: 8px; */
 
   grid-template-areas:"header header header header header" 
                         "main main main main main"

@@ -30,6 +30,7 @@
     <!-- meu styles  -->
     <link rel="stylesheet" href="./src/css/app.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
 
     <title>Mobifacil</title>
   </head>
@@ -132,18 +133,79 @@
             </button>
           </div>
           <div class="myCartBody">
-            <div class="emptyCart d-flex flex-column align-items-center w-100 text-center ">
-              <img src="./img/minicart-empty-icon.svg" alt="">
+            <div
+              class="emptyCart d-flex flex-column align-items-center w-100 text-center"
+            >
+              <img src="./img/minicart-empty-icon.svg" alt="" />
               <strong class="mt-2">Seu Carrinho está vazio</strong>
-              <p class="mt-3">Parece que você não adicionou nenhuma viagem ao seu carrinho</p>
+              <p class="mt-3">
+                Parece que você não adicionou nenhuma viagem ao seu carrinho
+              </p>
             </div>
-            <button class="btn w-100"><strong>Continuar comprando</strong></button>
+            <button class="btn w-100">
+              <strong>Continuar comprando</strong>
+            </button>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>main</main>
+    <main>
+      <section class="banner">
+        <h1 class="title">
+          <strong> Compre sua passagem de ônibus! </strong>
+        </h1>
+
+        <form action="#">
+          <div class="input-group flex-nowrap inputOrigem">
+            <span class="input-group-text" id="origem"><i class="fa-solid fa-location-arrow"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Digite aqui sua origem"
+              aria-label="Digite aqui sua origem"
+              aria-describedby="origem"
+            />
+          </div>
+          <div class="input-group flex-nowrap inputDestino">
+            <span class="input-group-text" id="destino"><i class="fa-solid fa-location-dot"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Digite aqui seu destino"
+              aria-label="Digite aqui seu destino"
+              aria-describedby="destino"
+            />
+          </div>
+          <div class="input-group flex-nowrap inputIda">
+            <span class="input-group-text" id="ida"><i class="fa-solid fa-calendar-days"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ida"
+              aria-label="Ida"
+              aria-describedby="ida"
+            />
+          </div>
+          <div class="input-group flex-nowrap inputVolta">
+            <span class="input-group-text" id="volta"><i class="fa-solid fa-calendar-days"></i></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Volta (Opcional)"
+              aria-label="Volta (Opcional)"
+              aria-describedby="volta"
+            />
+          </div>
+          <div class="checkPassagem d-flex align-items-center">
+            <input type="checkbox" name="passagem" id="passagemEstudante" />
+            <label class="ms-3" for="passagemEstudante"> Passagem para estudante </label>
+            <a href="#" target="_blank" rel="noopener noreferrer">(Saiba mais)</a>
+          </div>
+          <button class="btnSubmit btn btn-primary" type="button">Buscar passagens</button>
+        </form>
+      </section>
+    </main>
 
     <footer>footer</footer>
 

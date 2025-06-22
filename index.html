@@ -27,11 +27,17 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Flatpickr css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
     <!-- meu styles  -->
     <link rel="stylesheet" href="./src/css/app.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/form.css">
+    <link rel="stylesheet" href="./src/css/form.css" />
 
     <title>Mobifacil</title>
   </head>
@@ -159,7 +165,9 @@
 
         <form action="#">
           <div class="input-group flex-nowrap inputOrigem">
-            <span class="input-group-text" id="origem"><i class="fa-solid fa-location-arrow"></i></span>
+            <span class="input-group-text" id="origem"
+              ><i class="fa-solid fa-location-arrow"></i
+            ></span>
             <input
               type="text"
               class="form-control"
@@ -169,7 +177,9 @@
             />
           </div>
           <div class="input-group flex-nowrap inputDestino">
-            <span class="input-group-text" id="destino"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="input-group-text" id="destino"
+              ><i class="fa-solid fa-location-dot"></i
+            ></span>
             <input
               type="text"
               class="form-control"
@@ -179,43 +189,60 @@
             />
           </div>
           <div class="input-group flex-nowrap inputIda">
-            <span class="input-group-text" id="ida"  onclick="document.getElementById('inputIda').showPicker()"><i class="fa-solid fa-calendar-days"></i></span>
+            <span
+              class="input-group-text"
+            ><i class="fa-solid fa-calendar-days"></i
+            ></span>
             <input
-              type="date"
+              type="text"
               class="form-control"
               placeholder="Ida"
               aria-label="Ida"
               aria-describedby="ida"
-              id="inputIda"
+              id="ida"
+              autocomplete="off"
             />
           </div>
           <div class="input-group flex-nowrap inputVolta">
-            <span class="input-group-text" id="volta" onclick="document.getElementById('inputVolta').showPicker()"><i class="fa-solid fa-calendar-days"></i></span>
+            <span
+              class="input-group-text"
+              ><i class="fa-solid fa-calendar-days"></i
+            ></span>
             <input
-              type="date"
+              type="text"
               class="form-control"
               placeholder="Volta (Opcional)"
               aria-label="Volta (Opcional)"
               aria-describedby="volta"
-              id="inputVolta"
+              id="volta"
             />
           </div>
-          <div class="checkPassagem ">
+          <div class="checkPassagem">
             <input type="checkbox" name="passagem" id="passagemEstudante" />
             <label for="passagemEstudante"> Passagem para estudante </label>
-            <a href="#" target="_blank" rel="noopener noreferrer">(Saiba mais)</a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >(Saiba mais)</a
+            >
           </div>
-          <button class="btnSubmit btn btn-primary" type="button">Buscar passagens</button>
+          <button class="btnSubmit btn btn-primary" type="button">
+            Buscar passagens
+          </button>
         </form>
       </section>
     </main>
 
     <footer>footer</footer>
 
+    <!-- Bootstrap js  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Flatpickr js  -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <script src="./src/js/flatpickr.js" defer></script>
   </body>
 </html>

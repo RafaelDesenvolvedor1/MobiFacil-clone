@@ -48,21 +48,6 @@ main .banner form .inputDestino {
   cursor: pointer;
 }
 
-/* Chrome, Edge, Opera */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-}
-
-/* Firefox */
-input[type="date"] {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
 main .banner form .inputIda {
   grid-row: 3;
   grid-column: 1 / 3;
@@ -125,7 +110,7 @@ main .banner form .btnSubmit {
   border: none;
   border-radius: 2rem;
   font-weight: bold;
-  transition: 1s;
+  transition: .3s;
 }
 
 main .banner form .btnSubmit:hover {

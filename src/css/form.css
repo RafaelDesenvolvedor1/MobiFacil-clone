@@ -12,6 +12,8 @@ main .banner form {
   padding: 1rem;
   border-radius: 1rem;
   /* min-height: 300px; */
+
+  position: relative;
 }
 
 main .banner form .input-group {
@@ -33,9 +35,37 @@ main .banner form .input-group span {
   color: var(--bgHeader);
 }
 
+/* form .inputsLocations {
+  grid-column: 1 / 5;
+} */
+
 main .banner form .inputOrigem {
   grid-row: 1;
   grid-column: 1 / 5;
+  /* margin-bottom: 8px; */
+}
+
+form .btnTransfer{
+    position: absolute;
+    grid-column: 4/5;
+    grid-row: 2;
+    z-index: 1;
+    right: 0;
+
+    margin-top:-20px;
+    margin-right: 10px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    border: 2px solid var(--colorPrimary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    background-color: #fff;
+    color: var(--bgHeader);
 }
 
 main .banner form .inputDestino {
@@ -110,7 +140,7 @@ main .banner form .btnSubmit {
   border: none;
   border-radius: 2rem;
   font-weight: bold;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 main .banner form .btnSubmit:hover {

@@ -4,6 +4,7 @@ flatpickr("#ida", {
   locale: "pt",
   allowInput: true,
   disableMobile: "true",
+  position: "above",
 });
 
 flatpickr("#volta", {
@@ -12,4 +13,5 @@ flatpickr("#volta", {
   locale: "pt",
   allowInput: true,
   disableMobile: "true",
+  position: "above",
 });

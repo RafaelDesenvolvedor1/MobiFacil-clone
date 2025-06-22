@@ -1,7 +1,7 @@
 main .banner {
   background-color: var(--colorPrimary);
   min-width: 100%;
-  height: 90dvh;
+  height: 80dvh;
   position: relative;
   background-image: url(../../img/MOB_021_banner_Mobi5anos_Mobile2.webp);
   background-size: cover;
@@ -10,9 +10,9 @@ main .banner {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 150px) repeat(3, 110px);
 
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 
 main .banner .title {
@@ -24,64 +24,10 @@ main .banner .title {
   width: 300px;
 }
 
-main .banner form {
-  grid-row: 3 / 6;
-  grid-column: 1 / 4;
-  background-color: #fff;
-  margin: 0 var(--marginHorizontal);
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(4, 1fr);
 
-  padding: 1rem;
-  border-radius: 1rem;
-  min-height: 300px;
 
+@media (max-width: 400px) {
+  main .banner {
+    grid-template-rows: repeat(2, 150px) repeat(3, 120px);
+  }
 }
-
-main .banner form .input-group{
-    height: 60px;
-    border:2px solid var(--colorPrimary);
-    border-radius: .6rem;
-    overflow: hidden;
-}
-
-main .banner form .input-group input{
-    border: none;
-}
-
-main .banner form .input-group span{
-    background-color: transparent;
-    border: none;
-}
-
-main .banner form .inputOrigem {
-  grid-row: 1;
-  grid-column: 1 / 5;
-}
-
-main .banner form .inputDestino {
-  grid-row: 2;
-  grid-column: 1 / 5;
-}
-
-main .banner form .inputIda {
-  grid-row: 3;
-  grid-column: 1 / 3;
-}
-main .banner form .inputVolta {
-  grid-row: 3;
-  grid-column: 3 / 5;
-}
-
-main .banner form .checkPassagem {
-  grid-row: 4;
-  grid-column: 1 / 5;
-}
-
-main .banner form .btnSubmit {
-  grid-row: 5;
-  grid-column: 1 / 5;
-  height: 60px;
-}
-

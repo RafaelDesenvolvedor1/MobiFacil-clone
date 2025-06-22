@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./src/css/app.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/form.css">
 
     <title>Mobifacil</title>
   </head>
@@ -178,28 +179,30 @@
             />
           </div>
           <div class="input-group flex-nowrap inputIda">
-            <span class="input-group-text" id="ida"><i class="fa-solid fa-calendar-days"></i></span>
+            <span class="input-group-text" id="ida"  onclick="document.getElementById('inputIda').showPicker()"><i class="fa-solid fa-calendar-days"></i></span>
             <input
-              type="text"
+              type="date"
               class="form-control"
               placeholder="Ida"
               aria-label="Ida"
               aria-describedby="ida"
+              id="inputIda"
             />
           </div>
           <div class="input-group flex-nowrap inputVolta">
-            <span class="input-group-text" id="volta"><i class="fa-solid fa-calendar-days"></i></span>
+            <span class="input-group-text" id="volta" onclick="document.getElementById('inputVolta').showPicker()"><i class="fa-solid fa-calendar-days"></i></span>
             <input
-              type="text"
+              type="date"
               class="form-control"
               placeholder="Volta (Opcional)"
               aria-label="Volta (Opcional)"
               aria-describedby="volta"
+              id="inputVolta"
             />
           </div>
-          <div class="checkPassagem d-flex align-items-center">
+          <div class="checkPassagem ">
             <input type="checkbox" name="passagem" id="passagemEstudante" />
-            <label class="ms-3" for="passagemEstudante"> Passagem para estudante </label>
+            <label for="passagemEstudante"> Passagem para estudante </label>
             <a href="#" target="_blank" rel="noopener noreferrer">(Saiba mais)</a>
           </div>
           <button class="btnSubmit btn btn-primary" type="button">Buscar passagens</button>

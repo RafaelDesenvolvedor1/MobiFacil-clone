@@ -11,7 +11,7 @@ main .banner form {
 
   padding: 1rem;
   border-radius: 1rem;
-  /* min-height: 300px; */
+  min-height: 300px;
 
   position: relative;
 }
@@ -45,27 +45,27 @@ main .banner form .inputOrigem {
   /* margin-bottom: 8px; */
 }
 
-form .btnTransfer{
-    position: absolute;
-    grid-column: 4/5;
-    grid-row: 2;
-    z-index: 1;
-    right: 0;
+form .btnTransfer {
+  position: absolute;
+  grid-column: 4/5;
+  grid-row: 2;
+  z-index: 1;
+  right: 0;
 
-    margin-top:-20px;
-    margin-right: 10px;
+  margin-top: -20px;
+  margin-right: 10px;
 
-    width: 40px;
-    height: 40px;
-    border-radius: 2rem;
-    border: 2px solid var(--colorPrimary);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 2rem;
+  border: 2px solid var(--colorPrimary);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 
-    background-color: #fff;
-    color: var(--bgHeader);
+  background-color: #fff;
+  color: var(--bgHeader);
 }
 
 main .banner form .inputDestino {
@@ -145,4 +145,14 @@ main .banner form .btnSubmit {
 
 main .banner form .btnSubmit:hover {
   background-color: var(--bgHeader);
+}
+
+@media (min-width: 800px) {
+  main .banner form {
+      grid-row: 4 / 6;
+      padding-bottom: 20rem;
+
+  }
+
+
 }

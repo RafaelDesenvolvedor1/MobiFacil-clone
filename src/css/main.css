@@ -31,3 +31,17 @@ main .banner .title {
     grid-template-rows: repeat(2, 150px) repeat(3, 120px);
   }
 }
+
+@media (min-width:800px){
+  main .banner{
+    background-image: url(../../img/banner.webp);
+    background-size: cover;
+    grid-template-rows: repeat(3, 110px) repeat(3, 110px);
+  }
+
+  main .banner .title{
+    grid-row: 3;
+    grid-column: 1/5;
+    width: auto;
+  }
+}
